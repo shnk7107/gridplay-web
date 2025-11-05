@@ -1,0 +1,29 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+env/
+.venv/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node
+node_modules/
+dist/
+.build/
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs, caches
+*.log
+*.cache
+app/data/fastf1_cache/
+
+# OS
+Thumbs.db
+ehthumbs.db
