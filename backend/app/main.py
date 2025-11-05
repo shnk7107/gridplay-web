@@ -1,8 +1,12 @@
 ﻿from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import telemetry, predict, battles
+from app.db import init_db  # 👈 add this line
 
 app = FastAPI(title="GridPlay API")
+
+# initialize database tables
+init_db()  # 👈 add this line
 
 app.add_middleware(
     CORSMiddleware,
